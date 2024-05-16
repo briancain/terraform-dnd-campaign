@@ -61,7 +61,7 @@ resource "github_repository_file" "readme" {
   overwrite_on_create = true
 }
 
-resource "github_repository_file" "index.html" {
+resource "github_repository_file" "index_html" {
   repository = github_repository.gh_repo.name
   branch     = "main"
   file       = "index.html"
