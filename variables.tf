@@ -12,6 +12,7 @@ variable "destination_org" {
 
 variable "gh_token" {
   description = "GitHub token with permissions to create and delete repos."
+  sensitive   = true
 }
 
 variable "commit_author" {
