@@ -33,3 +33,9 @@ variable "waypoint_application" {
     error_message = "waypoint_application must not contain dashes or underscores."
   }
 }
+
+variable "die_seed" {
+  type        = string
+  description = "Seed for the random number generator."
+  default     = ""
+}
