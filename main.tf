@@ -74,5 +74,5 @@ resource "github_repository_file" "index_html" {
   commit_email        = var.commit_email
   overwrite_on_create = true
 
-  depends_on = [github_repository_file.readme, dice_roll.dnd]
+  depends_on = [github_repository_file.readme, diceroll_roll.dnd]
 }
